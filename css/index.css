@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,4 +141,19 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  border: 1px solid blue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: none;
+}
+.resume-header {
+  width: 100%;
+  border: 1px solid green;
+  font-family: none;
+  font-size: 3rem;
+  font-weight: none;
 }
