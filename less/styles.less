@@ -68,15 +68,14 @@
 
         h2{
             width: @max-width;
-            padding: 2%;
+            padding: 1.5% 0;
             .fontFam(@roboto, 3rem, 900);
-            .border(1px, green, 20px 20px 0 0);
+            .border(1px, green);
             background-color: @banner1-bg;
             color: @banner-color;
             
             .profile-header-txt{
-                margin: 0 2%;
-                
+                margin: 0 3%; 
             }
         }
 
@@ -115,5 +114,31 @@
             }
         }
         
+    }
+
+    .work-history{
+        width: 100%;
+        margin: 5% 0;
+        .fontFam(@roboto, 3rem);
+
+        h2{
+            width: @max-width;
+            padding: 1.5% 0;
+            .fontFam(@roboto, 3rem, 900);
+            .border(1px, @banner2-bg);
+            background-color: @banner2-bg;
+            color: @banner-color;
+            
+            .work-header-txt{
+                margin: 0 3%; 
+            }
+        }
+
+        .work-history-box{
+            background-color: @bannerBg;
+            padding: 2%;
+            .border(1px, @banner2-bg);
+            .flexBox(columns, wrap, space-between);
+        }
     }
 }
