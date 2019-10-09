@@ -1,3 +1,4 @@
+/* Color Theme Swatches in RGBA */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -141,16 +142,14 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  background-color: #e8e8e8;
 }
 /*Nav Bar*/
 .nav-bar {
   position: fixed;
   width: 100%;
-  padding: 0.5% 0;
-  border: 1px solid blue;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-weight: none;
+  padding: 1% 0;
+  background-color: #0e3b52;
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: space-between;
@@ -158,17 +157,31 @@ body {
   align-content: none;
 }
 .nav-bar .nav-links {
-  width: 50%;
-  padding: 0.5% 0;
+  width: 30%;
+  margin: 0 2%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: none;
   align-content: none;
 }
 .nav-bar .nav-links a {
-  margin: 0 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: none;
+  padding: 5% 0;
   text-decoration: none;
+  color: #eee;
+}
+.nav-bar .nav-links a:hover {
+  color: #cc4848;
+}
+.nav-bar h2 {
+  margin: 0 1%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: none;
+  color: #e8e8e8;
 }
 .resume-header {
   width: 100%;

@@ -3,19 +3,30 @@
     position: fixed;
     width: @max-width;
     padding: @nav-padding;
-    .border(1px, blue);
-    .fontFam(@roboto, 2rem);
+    background-color: @nav-background-color;
     .flexBox(row-reverse, nowrap, space-between, center);
 
     .nav-links{
         width: @nav-links-width;
-        padding:@nav-padding;
-        .flexBox(row, wrap, space-evenly);
+        margin: 0 2%;
+        .flexBox(row, wrap, space-between);
 
         a{
-            margin: 0 2%;
+            .fontFam(@roboto, 2rem);
+            padding: @nav-link-padding;
             text-decoration: none;
+            color: #eee;
         }
+
+        a:hover{
+            color: @nav-link-hover;
+        }
+    }
+
+    h2{
+        margin: 0 1%;
+        .fontFam(@roboto, 3rem);
+        color: @nav-header-color;
     }
 }
 
