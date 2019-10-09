@@ -62,31 +62,53 @@
     margin: auto;
 
     .my-profile{
-        width: @max-width;
+        width: 50%;
         margin: 5% 0;
-        font-size: @font3rem;
+        .fontFam(@roboto, 3rem);
 
         h2{
             width: @max-width;
-            padding: @profile-padding;
+            padding: 3%;
             .border(1px, green, 20px 20px 0 0);
             background-color: @banner1-bg;
             color: @banner-color;
+            
+            .profile-header-txt{
+                margin: 0 5%;
+            }
         }
 
         .profile-box{
             background-color: @bannerBg;
+            padding: 2%;
             .border(1px, @banner1-bg);
             .flexBox(columns, wrap, space-between);
 
-            .profile-pic{
-                width: 50%;
-                height: 50%;
-                .border(none, none, 100%);
+            .profile-img-box{
+                width: 45%;
+                .flexBox(row, nowrap, center);
+                .profile-pic{
+                    width: 100%;
+                    height:100%;
+                    .border(none, none, 100%);
+                }
             }
+    
 
             .bio{
+              
+                width: 53%;
+                padding: 2%;
 
+                h3{
+                    margin-bottom: 5%;
+                    .fontFam(@roboto, 3rem, 900);
+                }
+
+                p{
+                    .fontFam(@roboto, 1.8rem);
+                    line-height: 2.2rem;
+                }
             }
         }
         
