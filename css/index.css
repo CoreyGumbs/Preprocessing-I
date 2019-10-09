@@ -210,7 +210,7 @@ body {
   margin: auto;
 }
 .container .my-profile {
-  width: 50%;
+  width: 100%;
   margin: 5% 0;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
@@ -218,14 +218,17 @@ body {
 }
 .container .my-profile h2 {
   width: 100%;
-  padding: 3%;
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
   border: 1px solid green;
   border-radius: 20px 20px 0 0;
   background-color: #238e79;
   color: #ffffff;
 }
 .container .my-profile h2 .profile-header-txt {
-  margin: 0 5%;
+  margin: 0 2%;
 }
 .container .my-profile .profile-box {
   background-color: #ffffff;
@@ -239,7 +242,7 @@ body {
   align-content: none;
 }
 .container .my-profile .profile-box .profile-img-box {
-  width: 45%;
+  width: 20%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -253,18 +256,21 @@ body {
   border-radius: 100%;
 }
 .container .my-profile .profile-box .bio {
-  width: 53%;
-  padding: 2%;
+  width: 78%;
+  padding: 1%;
 }
 .container .my-profile .profile-box .bio h3 {
-  margin-bottom: 5%;
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 1% 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
+  border-bottom: 1px solid #ccc;
 }
 .container .my-profile .profile-box .bio p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: none;
-  line-height: 2.2rem;
+  line-height: 3rem;
 }
