@@ -1,12 +1,22 @@
-//Nav
+/*Nav Bar*/
 .nav-bar{
     position: fixed;
     width: @max-width;
+    padding: @nav-padding;
     .border(1px, blue);
-    .fontFam(@roboto, 3rem);
+    .fontFam(@roboto, 2rem);
+    .flexBox(row-reverse, nowrap, space-between, center);
 
-   
-    
+    .nav-links{
+        width: @nav-links-width;
+        padding:@nav-padding;
+        .flexBox(row, wrap, space-evenly);
+
+        a{
+            margin: 0 2%;
+            text-decoration: none;
+        }
+    }
 }
 
 //Header
