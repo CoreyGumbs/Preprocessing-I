@@ -14,6 +14,7 @@
     font-weight: @fontWeight;
 }
 
-.border(@border-size, @color){
+.border(@border-size: none, @color:none, @radius: 0){
     border: @border-size solid @color;
+    border-radius: @radius;
 }

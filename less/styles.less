@@ -1,6 +1,8 @@
 /*Nav Bar*/
 .nav-bar{
     position: fixed;
+    top: 0;
+    left: 0;
     width: @max-width;
     padding: @nav-padding;
     background-color: @nav-background-color;
@@ -39,6 +41,54 @@
 //Header
 .resume-header{
     width: @max-width;
-    .border(1px, green);
+    height: @max-height;
+    margin: 6.2% 0 0 0;
+    background: linear-gradient(
+        rgba(0, 0, 0,.1), 
+      rgba(0, 0, 0, .9)
+    ), url('../images/hero-img.jpg') no-repeat fixed 50% 50%;
+    
     .fontFam(none, 3rem);
+
+    .hero-container{
+        width: @max-width;
+        max-height: @max-height;
+        background-color: rgba(0,0,0,.5);
+    }
+}
+
+.container{
+    width: @container-width;
+    margin: auto;
+
+    .my-profile{
+        width: @max-width;
+        margin: 5% 0;
+        font-size: @font3rem;
+
+        h2{
+            width: @max-width;
+            padding: @profile-padding;
+            .border(1px, green, 20px 20px 0 0);
+            background-color: @banner1-bg;
+            color: @banner-color;
+        }
+
+        .profile-box{
+            background-color: @bannerBg;
+            .border(1px, @banner1-bg);
+            .flexBox(columns, wrap, space-between);
+
+            .profile-pic{
+                width: 50%;
+                height: 50%;
+                .border(none, none, 100%);
+            }
+
+            .bio{
+
+            }
+        }
+        
+    }
 }
