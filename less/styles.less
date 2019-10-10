@@ -126,7 +126,7 @@
             width: @job-box-width;
             background-color: @job-Bg;
             padding: 2%;
-            .border(1px, @Bundle-Up-4-rgba);
+            .border(1.5px, @Bundle-Up-1-rgba);
             
             .job-header{
                 .fontFam(@roboto, 2rem, 900);
@@ -136,11 +136,27 @@
             }
 
             .job-location{
-                margin: 2% 0;
+                margin: 5% 0;
                 font-size: 1.5rem;
+                color: @job-location-color;
             }
-             .job-title, .job-date, .job-description{
-                .fontFam(@roboto, 2rem);
+
+            .job-title{
+                margin: 5% 0;
+                .fontFam(@roboto, 2rem, 900);
+                color: @job-title-color;
+            } 
+
+            .job-date{
+                 margin: 2%;
+                 .fontFam(@roboto, 1.5rem);
+                 color: @job-date-color;
+            }
+             
+            .job-description{
+                margin: 10% 0;
+                .fontFam(@roboto, 1.6rem);
+                line-height: 1.3;
             }
 
 
