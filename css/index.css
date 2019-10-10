@@ -368,3 +368,24 @@ body {
 .container .skillz .skill-set .skill-item:hover .skill-icon {
   color: yellow;
 }
+.container .info-section {
+  width: 100%;
+  margin: 5% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: none;
+  display: flex;
+  flex-flow: columns wrap;
+  justify-content: space-between;
+  align-items: none;
+  align-content: none;
+  border: 1px solid red;
+  border-radius: 0;
+}
+.container .info-section .school,
+.container .info-section .contact {
+  width: 48%;
+  background-color: #ffffff;
+  border: 1px solid blue;
+  border-radius: 0;
+}

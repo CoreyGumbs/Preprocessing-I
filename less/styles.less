@@ -208,4 +208,18 @@
             
         }
     }
+
+    .info-section{
+        width: 100%;
+        margin: 5% 0;
+        .fontFam(@roboto, 3rem);
+        .flexBox(columns, wrap, space-between);
+        .border(1px, red);
+
+        .school, .contact{
+            width: 48%;
+            background-color: @white;
+            .border(1px, blue);
+        }
+    }
 }
