@@ -295,20 +295,36 @@
                     vertical-align: middle;
 
                     .contact-icon{
+                        color: @Flat-Orange;
                         font-size: 2.6rem;
                     }
                     .contact-txt{
-                    
+                        color: @Flat-Grey;
                         margin-left: 2%;
                     }
 
-                    a{
+                    a{  
+                        color: @Flat-Grey;
                         margin-left: 2%;
                         text-decoration: none;
                     }
                 }
             }
-
         }
+    }
+}
+
+footer{
+
+    width: @max-width;
+    margin-top: 10%;
+    height: 20%;
+    background-color: @black;
+    .flexBox(row, wrap, center, center);
+
+    .copyright{
+
+        .fontFam(@roboto, 2rem, 900);
+        color: @white;
     }
 }
