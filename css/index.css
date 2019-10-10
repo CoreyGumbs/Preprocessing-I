@@ -1,1 +1,314 @@
-/* Compile your LESS file! */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in RGBA */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  background-color: #e8e8e8;
+}
+/*Nav Bar*/
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1% 0;
+  background-color: #0e3b52;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: none;
+}
+.nav-bar .nav-links {
+  width: 30%;
+  margin: 0 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: none;
+  align-content: none;
+}
+.nav-bar .nav-links a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: none;
+  padding: 5% 0;
+  text-decoration: none;
+  color: #eee;
+}
+.nav-bar .nav-links a:hover {
+  color: #cc4848;
+}
+.nav-bar h2 {
+  width: 30%;
+  margin: 0 1%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: none;
+  color: #e8e8e8;
+}
+.nav-bar h2 .nav-icon {
+  margin: 0 0.5%;
+  color: #fb6054;
+}
+.resume-header {
+  width: 100%;
+  height: 50%;
+  margin: 6.2% 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('../images/hero-img.jpg') no-repeat fixed 50% 50%;
+  font-family: none;
+  font-size: 3rem;
+  font-weight: none;
+}
+.resume-header .hero-container {
+  width: 100%;
+  max-height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.container .my-profile {
+  width: 100%;
+  margin: 5% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: none;
+}
+.container .my-profile h2 {
+  width: 100%;
+  padding: 1.5% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  border: 1px solid green;
+  border-radius: 0;
+  background-color: #238e79;
+  color: #ffffff;
+}
+.container .my-profile h2 .profile-header-txt {
+  margin: 0 3%;
+}
+.container .my-profile .profile-box {
+  background-color: #ffffff;
+  padding: 2%;
+  border: 1px solid #238e79;
+  border-radius: 0;
+  display: flex;
+  flex-flow: columns wrap;
+  justify-content: space-between;
+  align-items: none;
+  align-content: none;
+}
+.container .my-profile .profile-box .profile-img-box {
+  width: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: none;
+  align-content: none;
+}
+.container .my-profile .profile-box .profile-img-box .profile-pic {
+  width: 100%;
+  height: 100%;
+  border: none solid none;
+  border-radius: 100%;
+}
+.container .my-profile .profile-box .bio {
+  width: 78%;
+  padding: 1%;
+}
+.container .my-profile .profile-box .bio h3 {
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 1% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  border-bottom: 1px solid #ccc;
+}
+.container .my-profile .profile-box .bio p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: none;
+  line-height: 3rem;
+}
+.container .work-history {
+  width: 100%;
+  margin: 5% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: none;
+  display: flex;
+  flex-flow: columns wrap;
+  justify-content: space-between;
+  align-items: none;
+  align-content: none;
+}
+.container .work-history .job {
+  width: 24.5%;
+  background-color: #ffffff;
+  padding: 2%;
+  border: 1px solid #fb6054;
+  border-radius: 0;
+}
+.container .work-history .job .job-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #ccc;
+  color: #8c8c8c;
+}
+.container .work-history .job .job-location {
+  margin: 2% 0;
+  font-size: 1.5rem;
+}
+.container .work-history .job .job-title,
+.container .work-history .job .job-date,
+.container .work-history .job .job-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: none;
+}

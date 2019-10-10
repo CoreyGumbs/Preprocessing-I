@@ -1,0 +1,149 @@
+/*Nav Bar*/
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: @max-width;
+    padding: @nav-padding;
+    background-color: @nav-background-color;
+    .flexBox(row-reverse, nowrap, space-between, center);
+
+    .nav-links{
+        width: @nav-links-width;
+        margin: 0 2%;
+        .flexBox(row, wrap, space-between);
+
+        a{
+            .fontFam(@roboto, 2rem);
+            padding: @nav-link-padding;
+            text-decoration: none;
+            color: #eee;
+        }
+
+        a:hover{
+            color: @nav-link-hover;
+        }
+    }
+
+    h2{
+        width: @nav-links-width;
+        margin: 0 1%;
+        .fontFam(@roboto, 3rem);
+        color: @nav-header-color;
+
+        .nav-icon{
+            margin: 0 .5%;
+            color: @nav-icon-color;
+        }
+    }
+}
+
+//Header
+.resume-header{
+    width: @max-width;
+    height: @max-height;
+    margin: 6.2% 0 0 0;
+    background: linear-gradient(
+        rgba(0, 0, 0,.1), 
+      rgba(0, 0, 0, .9)
+    ), url('../images/hero-img.jpg') no-repeat fixed 50% 50%;
+    
+    .fontFam(none, 3rem);
+
+    .hero-container{
+        width: @max-width;
+        max-height: @max-height;
+        background-color: rgba(0,0,0,.5);
+    }
+}
+
+.container{
+    width: @container-width;
+    margin: auto;
+
+    .my-profile{
+        width: 100%;
+        margin: 5% 0;
+        .fontFam(@roboto, 3rem);
+
+        h2{
+            width: @max-width;
+            padding: 1.5% 0;
+            .fontFam(@roboto, 3rem, 900);
+            .border(1px, green);
+            background-color: @banner1-bg;
+            color: @banner-color;
+            
+            .profile-header-txt{
+                margin: 0 3%; 
+            }
+        }
+
+        .profile-box{
+            background-color: @bannerBg;
+            padding: 2%;
+            .border(1px, @banner1-bg);
+            .flexBox(columns, wrap, space-between);
+
+            .profile-img-box{
+                width: 20%;
+                .flexBox(row, nowrap, center);
+                .profile-pic{
+                    width: 100%;
+                    height:100%;
+                    .border(none, none, 100%);
+                }
+            }
+
+            .bio{
+                width: 78%;
+                padding: 1%;
+
+                h3{
+                    width: @max-width;
+                    margin-bottom: 3%;
+                    padding: 1% 0;
+                    .fontFam(@roboto, 2.5rem, 900);
+                    border-bottom: 1px solid #ccc;
+                }
+
+                p{
+                    .fontFam(@roboto, 1.5rem);
+                    line-height: 3rem;
+                }
+            }
+        }
+        
+    }
+
+    .work-history{
+        width: 100%;
+        margin: 5% 0;
+        .fontFam(@roboto, 3rem);
+        .flexBox(columns, wrap, space-between);
+
+        .job{
+            width: @job-box-width;
+            background-color: @job-Bg;
+            padding: 2%;
+            .border(1px, @Bundle-Up-4-rgba);
+            
+            .job-header{
+                .fontFam(@roboto, 2rem, 900);
+                padding-bottom: 5%;
+                border-bottom: 1px solid #ccc;
+                color: @job-header-color;
+            }
+
+            .job-location{
+                margin: 2% 0;
+                font-size: 1.5rem;
+            }
+             .job-title, .job-date, .job-description{
+                .fontFam(@roboto, 2rem);
+            }
+
+
+        }
+    }
+}
