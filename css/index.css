@@ -399,7 +399,7 @@ body {
 }
 .container .info-section .school .school-item {
   padding: 2%;
-  margin: 2% 0;
+  margin: 5% 0;
   display: flex;
   flex-flow: columns wrap;
   justify-content: space-evenly;
@@ -451,4 +451,32 @@ body {
   padding-bottom: 2%;
   border-bottom: 1px solid #ccc;
   color: #BA1433;
+}
+.container .info-section .contact .contact-list {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.6rem;
+  font-weight: none;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: none;
+}
+.container .info-section .contact .contact-list .contact-item {
+  width: 100%;
+  margin: 2% 0;
+  padding: 2%;
+  vertical-align: middle;
+}
+.container .info-section .contact .contact-list .contact-item .contact-icon {
+  font-size: 2.6rem;
+}
+.container .info-section .contact .contact-list .contact-item .contact-txt {
+  margin-left: 2%;
+}
+.container .info-section .contact .contact-list .contact-item a {
+  margin-left: 2%;
+  text-decoration: none;
 }

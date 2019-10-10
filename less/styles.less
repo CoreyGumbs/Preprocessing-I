@@ -234,7 +234,7 @@
             }
             .school-item{
                 padding: 2%;
-                margin: 2% 0;
+                margin: 5% 0;
                 .flexBox(columns, wrap, space-evenly);
 
                 .school-logo{
@@ -280,6 +280,33 @@
                 padding-bottom: 2%;
                 border-bottom: 1px solid #ccc;
                 color: @lambda-red;
+            }
+
+            .contact-list{
+                width: 100%;
+                .fontFam(@roboto, 2.6rem);
+                list-style-type: none;
+                .flexBox(row, wrap, space-between, center );
+
+                .contact-item{
+                    width: 100%;
+                    margin: 2% 0;
+                    padding: 2%;
+                    vertical-align: middle;
+
+                    .contact-icon{
+                        font-size: 2.6rem;
+                    }
+                    .contact-txt{
+                    
+                        margin-left: 2%;
+                    }
+
+                    a{
+                        margin-left: 2%;
+                        text-decoration: none;
+                    }
+                }
             }
 
         }
