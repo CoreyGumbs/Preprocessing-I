@@ -290,15 +290,21 @@ body {
   width: 24.5%;
   background-color: #ffffff;
   padding: 2%;
-  border: 1px solid grey;
+  border: 1px solid #fb6054;
   border-radius: 0;
 }
 .container .work-history .job .job-header {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #ccc;
+  color: #8c8c8c;
 }
-.container .work-history .job .job-location,
+.container .work-history .job .job-location {
+  margin: 2% 0;
+  font-size: 1.5rem;
+}
 .container .work-history .job .job-title,
 .container .work-history .job .job-date,
 .container .work-history .job .job-description {

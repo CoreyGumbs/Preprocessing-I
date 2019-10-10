@@ -126,15 +126,24 @@
             width: @job-box-width;
             background-color: @job-Bg;
             padding: 2%;
-            .border(1px, grey);
+            .border(1px, @Bundle-Up-4-rgba);
             
             .job-header{
-                .fontFam(@roboto, 2.5rem, 900);
+                .fontFam(@roboto, 2rem, 900);
+                padding-bottom: 5%;
+                border-bottom: 1px solid #ccc;
+                color: @job-header-color;
             }
 
-            .job-location, .job-title, .job-date, .job-description{
+            .job-location{
+                margin: 2% 0;
+                font-size: 1.5rem;
+            }
+             .job-title, .job-date, .job-description{
                 .fontFam(@roboto, 2rem);
             }
+
+
         }
     }
 }
