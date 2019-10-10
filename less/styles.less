@@ -65,6 +65,7 @@
         width: 100%;
         margin: 5% 0;
         .fontFam(@roboto, 3rem);
+        box-shadow: 3px 5px 5px grey;
 
         h2{
             width: @max-width;
@@ -161,6 +162,50 @@
             }
 
 
+        }
+    }
+
+    .skillz{
+        width: 100%;
+        margin: 5% 0;
+
+
+        .skill-set{
+            width: 100%;
+            .flexBox(row, wrap, space-evenly, center);
+            list-style-type: none;
+          
+
+            .skill-item{
+                width: 15%;
+                margin: 2% 0;
+                padding: 2% 1%;
+                background-color: @white;
+                text-align: center;
+                .border(2px, @Bundle-Up-4-rgba);
+                .fontFam(@roboto, 2rem);
+                color: @Bundle-Up-4-rgba;
+                box-shadow: 3px 5px 5px grey;
+
+            
+                
+                .skill-txt{
+                    margin: 0 4%;
+                }
+                
+            }
+
+            .skill-item:hover{
+                color: white;
+                background-color: @Bundle-Up-2-rgba;
+                .border(2px, @Flat-DrkBlue);
+
+                .skill-icon{
+                    color: yellow;
+                }
+            }
+
+            
         }
     }
 }
