@@ -120,25 +120,21 @@
         width: 100%;
         margin: 5% 0;
         .fontFam(@roboto, 3rem);
+        .flexBox(columns, wrap, space-between);
 
-        h2{
-            width: @max-width;
-            padding: 1.5% 0;
-            .fontFam(@roboto, 3rem, 900);
-            .border(1px, @banner2-bg);
-            background-color: @banner2-bg;
-            color: @banner-color;
-            
-            .work-header-txt{
-                margin: 0 3%; 
-            }
-        }
-
-        .work-history-box{
-            background-color: @bannerBg;
+        .job{
+            width: @job-box-width;
+            background-color: @job-Bg;
             padding: 2%;
-            .border(1px, @banner2-bg);
-            .flexBox(columns, wrap, space-between);
+            .border(1px, grey);
+            
+            .job-header{
+                .fontFam(@roboto, 2.5rem, 900);
+            }
+
+            .job-location, .job-title, .job-date, .job-description{
+                .fontFam(@roboto, 2rem);
+            }
         }
     }
 }

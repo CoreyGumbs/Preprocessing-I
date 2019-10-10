@@ -280,29 +280,29 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   font-weight: none;
-}
-.container .work-history h2 {
-  width: 100%;
-  padding: 1.5% 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  border: 1px solid #0e3b52;
-  border-radius: 0;
-  background-color: #0e3b52;
-  color: #ffffff;
-}
-.container .work-history h2 .work-header-txt {
-  margin: 0 3%;
-}
-.container .work-history .work-history-box {
-  background-color: #ffffff;
-  padding: 2%;
-  border: 1px solid #0e3b52;
-  border-radius: 0;
   display: flex;
   flex-flow: columns wrap;
   justify-content: space-between;
   align-items: none;
   align-content: none;
+}
+.container .work-history .job {
+  width: 24.5%;
+  background-color: #ffffff;
+  padding: 2%;
+  border: 1px solid grey;
+  border-radius: 0;
+}
+.container .work-history .job .job-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.container .work-history .job .job-location,
+.container .work-history .job .job-title,
+.container .work-history .job .job-date,
+.container .work-history .job .job-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: none;
 }
