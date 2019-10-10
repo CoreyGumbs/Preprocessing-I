@@ -292,6 +292,7 @@ body {
   padding: 2%;
   border: 1.5px solid #04aae2;
   border-radius: 0;
+  box-shadow: 3px 5px 5px grey;
 }
 .container .work-history .job .job-header {
   font-family: 'Roboto', sans-serif;
@@ -311,7 +312,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 900;
-  color: #0e3b52;
+  color: #d85448;
 }
 .container .work-history .job .job-date {
   margin: 2%;
