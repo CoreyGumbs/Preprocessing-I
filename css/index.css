@@ -143,7 +143,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
-  background-color: #e8e8e8;
+  background-color: #E8E8E8;
 }
 /*Nav Bar*/
 .nav-bar {
@@ -185,7 +185,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   font-weight: none;
-  color: #e8e8e8;
+  color: #b8b8b8;
 }
 .nav-bar h2 .nav-icon {
   margin: 0 0.5%;
@@ -215,6 +215,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   font-weight: none;
+  box-shadow: 3px 5px 5px grey;
 }
 .container .my-profile h2 {
   width: 100%;
@@ -290,8 +291,9 @@ body {
   width: 24.5%;
   background-color: #ffffff;
   padding: 2%;
-  border: 1px solid #fb6054;
+  border: 1.5px solid #04aae2;
   border-radius: 0;
+  box-shadow: 3px 5px 5px grey;
 }
 .container .work-history .job .job-header {
   font-family: 'Roboto', sans-serif;
@@ -299,16 +301,70 @@ body {
   font-weight: 900;
   padding-bottom: 5%;
   border-bottom: 1px solid #ccc;
-  color: #8c8c8c;
+  color: #04aae2;
 }
 .container .work-history .job .job-location {
-  margin: 2% 0;
+  margin: 5% 0;
   font-size: 1.5rem;
+  color: #b8b8b8;
 }
-.container .work-history .job .job-title,
-.container .work-history .job .job-date,
+.container .work-history .job .job-title {
+  margin: 5% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #d85448;
+}
+.container .work-history .job .job-date {
+  margin: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: none;
+  color: #8c8c8c;
+}
 .container .work-history .job .job-description {
+  margin: 10% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: none;
+  line-height: 1.3;
+}
+.container .skillz {
+  width: 100%;
+  margin: 5% 0;
+}
+.container .skillz .skill-set {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: none;
+  list-style-type: none;
+}
+.container .skillz .skill-set .skill-item {
+  width: 15%;
+  margin: 2% 0;
+  padding: 2% 1%;
+  background-color: #ffffff;
+  text-align: center;
+  border: 2px solid #fb6054;
+  border-radius: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: none;
+  color: #fb6054;
+  box-shadow: 3px 5px 5px grey;
+}
+.container .skillz .skill-set .skill-item .skill-txt {
+  margin: 0 4%;
+}
+.container .skillz .skill-set .skill-item:hover {
+  color: white;
+  background-color: #0e3b52;
+  border: 2px solid #1f2a2f;
+  border-radius: 0;
+}
+.container .skillz .skill-set .skill-item:hover .skill-icon {
+  color: yellow;
 }
